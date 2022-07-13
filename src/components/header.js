@@ -1,6 +1,7 @@
 import { Box, Text, Grid } from "@chakra-ui/layout";
 
-export const Header = () => {
+export const Header = () => 
+{
   return (
     <Box
       bg="#000"
@@ -21,21 +22,21 @@ export const Header = () => {
           transition="all .0.2s"
           _hover={{ textDecoration: "underline 1px" }}
         >
-          About
+          <a href="#About">About</a>
         </Text>
         <Text
           fontSize="3xl"
           fontFamily="Rajdhani"
           _hover={{ textDecoration: "underline 1px" }}
         >
-          Works
+          <a href="#Works">Works</a>
         </Text>
         <Text
           fontSize="3xl"
           fontFamily="Rajdhani"
           _hover={{ textDecoration: "underline 1px" }}
         >
-          Contact
+          <a href="#Images">Images</a>
         </Text>
       </Grid>
     </Box>
