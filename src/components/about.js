@@ -1,4 +1,6 @@
-import { Box, Text} from "@chakra-ui/layout";
+import { Box, Text, Divider, Link } from "@chakra-ui/layout";
+import {Image} from "@chakra-ui/react"
+import githubIcon from "../images/GitHub-Mark-32px.png";
 
 export const TopAbout = () => {
   return (
@@ -6,6 +8,22 @@ export const TopAbout = () => {
         <Text as="u" fontSize="3xl" color="#ECC94B" fontFamily="Rajdhani">
             About
         </Text>
+        <Box textAlign="left" display="flex" alignItems="center">
+          <Box m={0}>
+            <Text fontFamily="Roboto" fontWeight="bold" fontSize={72} m>
+              Hi
+              Im So1 bloom
+            </Text>
+          </Box>
+        </Box>
+        <Divider w={20} borderColor="#ECC94B" opacity="1" mb={5} />
+        <Box display="flex" justifyContent="left" alignItems="center">
+          <Image src={githubIcon.src} mr={2}></Image>
+          <Text fontSize="3xl" fontFamily="Rajdhani">
+            GitHub :
+            <Link href='https://github.com/tami719' isExternal> tami719 </Link>
+          </Text>
+        </Box>
     </Box>
   );
 };

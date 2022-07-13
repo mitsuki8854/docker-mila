@@ -1,4 +1,4 @@
-import { Box, Text } from "@chakra-ui/layout";
+import { Box, Text, Grid } from "@chakra-ui/layout";
 
 export const Header = () => {
   return (
@@ -12,12 +12,32 @@ export const Header = () => {
       alignItems="center"
     >
       <Text fontSize={44} fontFamily="Roboto" fontWeight="bold">
-        Mp
-        <Text as="span" color="#ECC94B">
-          .
-        </Text>
-        2021
+        milalaの自己紹介ブログ
       </Text>
+      <Grid templateColumns="repeat(3, 1fr)" gap={6} ml={14} mr={14}>
+        <Text
+          fontSize="3xl"
+          fontFamily="Rajdhani"
+          transition="all .0.2s"
+          _hover={{ textDecoration: "underline 1px" }}
+        >
+          About
+        </Text>
+        <Text
+          fontSize="3xl"
+          fontFamily="Rajdhani"
+          _hover={{ textDecoration: "underline 1px" }}
+        >
+          Works
+        </Text>
+        <Text
+          fontSize="3xl"
+          fontFamily="Rajdhani"
+          _hover={{ textDecoration: "underline 1px" }}
+        >
+          Contact
+        </Text>
+      </Grid>
     </Box>
   );
 };
