@@ -11,6 +11,9 @@ export const Header = () =>
       display="flex"
       justifyContent="center"
       alignItems="center"
+      pos="fixed"
+      w="100%"
+      zIndex={2}
     >
       <Text fontSize={44} fontFamily="Roboto" fontWeight="bold">
         milalaの自己紹介ブログ
@@ -29,14 +32,14 @@ export const Header = () =>
           fontFamily="Rajdhani"
           _hover={{ textDecoration: "underline 1px" }}
         >
-          <a href="#Works">Works</a>
+          <a href="#Works">Profile</a>
         </Text>
         <Text
           fontSize="3xl"
           fontFamily="Rajdhani"
           _hover={{ textDecoration: "underline 1px" }}
         >
-          <a href="#Images">Images</a>
+          <a href="#Images">Favorites</a>
         </Text>
       </Grid>
     </Box>

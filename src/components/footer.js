@@ -5,7 +5,7 @@ export const Footer = () =>
   return (
     <Box bg="#000" opacity="0.9">
       <Text fontSize="lg" fontFamily="Rajdhani" color="#ECC94B" textAlign="right">
-        MP.2021
+        2022
       </Text>
     </Box>
   );
