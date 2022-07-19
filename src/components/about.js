@@ -14,8 +14,8 @@ export const TopAbout = () =>
         <h2 id="About">About</h2>
         </Text>
       </Box>
-      <Stack direction={["column", "row"]} mx={100}>
-        <Box textAlign="left" display="flex" justifyContent="center" alignItems="center">
+      <Stack direction={["column", "row"]} mx={200}>
+        <Box boxShadow='Outline' textAlign="left" display="flex" justifyContent="center" alignItems="center">
           <Image src={ miracosta.src } mr={10} borderRadius={10} />
         </Box>
         <Box textAlign="left" display="flex" justifyContent="center" alignItems="center">

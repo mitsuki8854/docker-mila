@@ -1,7 +1,20 @@
-import { Box, Text, Grid } from "@chakra-ui/layout";
+import {
+  Link,
+  Box,
+  Text,
+  Grid,
+  Button,
+  Drawer,
+  DrawerBody,
+  DrawerHeader,
+  DrawerOverlay,
+  DrawerContent,
+  useDisclosure,
+} from '@chakra-ui/react'
 
 export const Header = () => 
 {
+  const { isOpen, onOpen, onClose } = useDisclosure()
   return (
     <Box
       bg="#000"
@@ -42,6 +55,21 @@ export const Header = () =>
           <a href="#Images">Favorites</a>
         </Text>
       </Grid>
+
+      <Box position="absolute" right={5}>
+        <Button colorScheme='black' shadow="md" onClick={onOpen}>Menu</Button>
+        <Drawer colorScheme='black' placement='right' onClose={onClose} isOpen={isOpen}>
+          <DrawerOverlay />
+          <DrawerContent>
+            <DrawerHeader borderBottomWidth='1px'>Menu</DrawerHeader>
+            <DrawerBody>
+              <p>未来のmilaに期待</p>
+              <br />
+              <Link href='https://mitsuki8854.github.io/mila/' isExternal> 旧サイト </Link>
+            </DrawerBody>
+          </DrawerContent>
+        </Drawer>
+      </Box>
     </Box>
   );
 };
